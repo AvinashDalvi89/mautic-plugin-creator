@@ -5,10 +5,13 @@
     "license": "MIT",
     "minimum-stability": "stable",
     "require": {},
-    "authors":[
-     "name" : "aviboy2006",
-     "email" : "avinashsdalvi@gmail.com"
+    "authors": [
+	    {
+	    	"name": "aviboy2006",
+	    	"email": "avinashsdalvi@gmail.com"	
+	    }
     ],
+
     "autoload": {
         "psr-4": {"aviboy2006\\MauticPluginCreator\\": "src/"}
     },
