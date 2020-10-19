@@ -1,0 +1,16 @@
+{
+    "name": "aviboy2006/mautic-plugin-creator",
+    "description": "Basic Mautic custom plugin creator",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {},
+    "authors":[
+     "name" : "aviboy2006",
+     "email" : "avinashsdalvi@gmail.com"
+    ],
+    "autoload": {
+        "psr-4": {"aviboy2006\\MauticPluginCreator\\": "src/"}
+    },
+    "require": {}
+}
