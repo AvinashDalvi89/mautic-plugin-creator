@@ -11,8 +11,11 @@
 	    	"email": "avinashsdalvi@gmail.com"	
 	    }
     ],
+    "require": {
+        "symfony/console": "~3.4.0",
+    },
 
     "autoload": {
-        "psr-4": {"aviboy2006\\MauticPluginCreator\\": "src/"}
+        "psr-4": {"Aviboy2006\\MauticPluginCreator\\": "src/"}
     }
 }
