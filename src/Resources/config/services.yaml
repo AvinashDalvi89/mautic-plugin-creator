@@ -1,0 +1,3 @@
+Aviboy2006\MauticPluginCreator\Command:
+        tags:
+            - { name: 'console.command', command: 'customplugin:create' }

@@ -1,10 +1,10 @@
 <?php
 
-require_once __DIR__ . '/../../../../vendor/autoload.php';
 
-use aviboy2006\MauticPluginCreator\Plugin;
+
+use Aviboy2006\MauticPluginCreator\Plugin;
+require_once __DIR__ . '/../../../autoload.php';
 
 $greeting = new Plugin();
-
-$greeting->initAction("/Library/WebServer/Documents/oss/test-mautic");
+$greeting->initAction();
 $greeting->initialiseBundle();

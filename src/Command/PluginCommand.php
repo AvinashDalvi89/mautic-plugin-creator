@@ -4,42 +4,33 @@
 namespace Aviboy2006\MauticPluginCreator\Command;
 
 
-use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class PluginCommand extends ContainerAwareCommand
+class PluginCommand extends Command
 {
-    protected function configure()
-    {
-        
-        $this
-            ->setName('customplugin:create')
-            ->setDescription('Create a custom plugin')
-            ->addArgument(
-                'bundlename',
-                InputArgument::OPTIONAL,
-                'Enter Bundle Name (Give name is camelcase do not include Bundle word): '
-            ) 
-            ->addArgument(
-                'author',
-                InputArgument::OPTIONAL,
-                'Enter Author Name for plugin:'
-            ) 
+    
+ 
+    // the name of the command (the part after "bin/console")
+    protected static $defaultName = 'customplugin:create';
 
-        ;
+    protected function configure(): void
+    {
+        // ...
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $bundle_name = $input->getArgument('bundlename');
-       
-        $author = $input->getArgument('author');
+        // ... put here the code to create the user
 
-       
+        // this method must return an integer number with the "exit status code"
+        // of the command.
 
-        $output->writeln($author);
+        // return this if there was no problem running the command
+        return 0;
+
+        // or return this if some error happened during the execution
+        // return 1;
     }
 }

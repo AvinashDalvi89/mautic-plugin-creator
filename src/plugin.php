@@ -1,6 +1,6 @@
 <?php 
 
-namespace aviboy2006\MauticPluginCreator;
+namespace Aviboy2006\MauticPluginCreator;
 
 
 
@@ -11,9 +11,11 @@ class Plugin
     private $bundleName;
     private $projectPath;
     private $exampleFolder;
-    public function initAction($projectPath = "")
-    {
-        $this->projectPath = $projectPath;
+    public function initAction()
+    {  
+
+        $this->projectPath = __DIR__;
+        print_r($this->projectPath);
         $this->exampleFolder = "ExampleBundle";
         $bundleName = readline("Enter Bundle Name (Give name is camelcase do not include Bundle word): ");
         if (strpos($bundleName, 'Bundle') == false) {
