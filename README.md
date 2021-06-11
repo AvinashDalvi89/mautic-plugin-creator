@@ -14,6 +14,12 @@ $ composer require aviboy2006/mautic-plugin-creator
 
 ## Usage
 
+Navigate to Mautic folder and run below command 
+
+``` 
+php vendor/aviboy2006/mautic-plugin-creator/src/test.php
+
+```
 
 ## Contributing
 
@@ -24,6 +30,13 @@ You can contribute in one of three ways:
 3. Contribute new features or update the wiki.
 
 _The code contribution process very formal.
+
+---
+**NOTE**
+
+I have created this with simple approach there are many improvement can be done. 
+
+---
 
 ## License
 
