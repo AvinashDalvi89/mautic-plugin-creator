@@ -17,7 +17,7 @@ class Plugin
         $this->projectPath = dirname(__FILE__, 5);
         echo "Project Path: ".this->projectPath."\n";
         $this->exampleFolder = "ExampleBundle";
-        $bundleName = readline("Enter Bundle Name (Give name is camelcase do not include Bundle word): ");
+        $bundleName = readline("Enter Bundle Name (Give name is CamelCase do not include Bundle word. Example, ExampleCode or SampleCode etc.): ");
         if (strpos($bundleName, 'Bundle') == false) {
 		      $bundleName =$bundleName."Bundle";
 		    }
