@@ -14,8 +14,8 @@ class Plugin
     public function initAction()
     {  
 
-        $this->projectPath = __DIR__;
-        print_r($this->projectPath);
+        $this->projectPath = dirname(__FILE__, 5);
+        echo "Project Path: ".this->projectPath."\n";
         $this->exampleFolder = "ExampleBundle";
         $bundleName = readline("Enter Bundle Name (Give name is camelcase do not include Bundle word): ");
         if (strpos($bundleName, 'Bundle') == false) {
