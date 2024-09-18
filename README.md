@@ -5,7 +5,7 @@ This package enable Mautic user to create basic skeleton of custom plugin bundle
 
 ## Requirements
 - PHP 7.4 and above.
-- Mautic 3.x 
+- Mautic 3.x and more
 
 ## Installation
 ```shell
